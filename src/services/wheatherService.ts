@@ -5,7 +5,10 @@ import { weatherMockService } from './wheatherServiceMock'
 
 const API_KEY = import.meta.env.VITE_OPENWEATHER_API_KEY
 const BASE_URL = 'https://api.openweathermap.org/data/2.5'
-const USE_MOCK_DATA = true // Set to false when you want to use the actual API
+const USE_MOCK_DATA =
+  import.meta.env.VITE_USE_MOCK_DATA !== undefined
+    ? import.meta.env.VITE_USE_MOCK_DATA === 'true'
+    : true
 
 interface WeatherParams {
   q?: string
