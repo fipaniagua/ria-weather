@@ -1,39 +1,55 @@
-# ria-weather
+# Weather App
 
-This template should help get you started developing with Vue 3 in Vite.
+A simple weather application built with Vue 3, TypeScript, Vite, Pinia, and Vuetify.
 
-## Recommended IDE Setup
+## Features
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- View weather forecasts for three predefined cities (Rio de Janeiro, Beijing, and Los Angeles)
+- View hourly and daily forecasts
+- Search for additional cities
+- Refresh weather data
+- Modern UI built with Vuetify
 
-## Type Support for `.vue` Imports in TS
+## Setup
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+1. Clone the repository:
 
-## Customize configuration
+```bash
+git clone <repository-url>
+cd weather-app
+```
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+2. Install dependencies:
 
-## Project Setup
-
-```sh
+```bash
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+3. Create an `.env.local` file in the project root with the following variables:
 
-```sh
+```
+VITE_OPENWEATHER_API_KEY=482944e26d320a80bd5e4f23b3de7d1f
+VITE_USE_MOCK_DATA=true
+```
+
+4. Run the development server:
+
+```bash
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+## Environment Variables
 
-```sh
-npm run build
-```
+- **VITE_OPENWEATHER_API_KEY** (required): API key for OpenWeatherMap
 
-### Lint with [ESLint](https://eslint.org/)
+- **VITE_USE_MOCK_DATA** (optional): Controls whether to use mock data or real API
+  - `true`: Use mock data (default if not set)
+  - `false`: Use the real OpenWeatherMap API
 
-```sh
-npm run lint
-```
+## Technologies Used
+
+- Vue 3 with Composition API
+- TypeScript
+- Vite
+- Pinia for state management
+- Vuetify for UI components
