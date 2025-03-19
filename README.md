@@ -15,7 +15,7 @@ A simple weather application built with Vue 3, TypeScript, Vite, Pinia, and Vuet
 1. Clone the repository:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/fipaniagua/ria-weather.git
 cd weather-app
 ```
 
