@@ -10,4 +10,5 @@ onMounted(async () => {
 
 <template>
   <main>Hello world</main>
+  <v-btn>Button</v-btn>
 </template>
